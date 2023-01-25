@@ -76,3 +76,7 @@ li::first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+
+.btn {
+  background-color: black;
+}
