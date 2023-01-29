@@ -18,77 +18,58 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div>
-            <img class="panda" src="src/img/panda2.jpg" width="550px" />
-            <form id="search-form" class="mb-3">
-              <div class="row">
-                <div class="col-9">
-                  <input
-                    type="search"
-                    placeholder="Type a city..."
-                    class="form-control"
-                    id="city-input"
-                    autocomplete="off"
-                  />
-                </div>
-                <div class="col-3">
-                  <input
-                    type="submit"
-                    value="Search"
-                    class="btn btn-primary w-100"
-                  />
+          <img class="panda" src="src/img/panda2.jpg" width="550px" />
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated at <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img src="" id="icon" />
+                <div>
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenhei-link">°F</a></span
+                  >
                 </div>
               </div>
-            </form>
-            <div class="overview">
-              <h1 id="city"></h1>
+            </div>
+            <div class="col-6">
               <ul>
-                <li>Last updated at <span id="date"></span></li>
-                <li id="description"></li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>
+                  Wind: <span id="wind"></span> <span class="metr">m/s</span>
+                </li>
               </ul>
             </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="d-flex weather-temperature">
-                  <img src="" id="icon" />
-                  <div>
-                    <strong id="temperature"></strong
-                    ><span class="units"
-                      ><a href="#" id="celsius-link" class="active">°C</a> |
-                      <a href="#" id="fahrenhei-link">°F</a></span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-6">
-                <ul>
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>
-                    Wind: <span id="wind"></span> <span class="metr">m/s</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          <div class="weather-forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="weather-forecast-date">Thu</div>
-                <img 
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" 
-                alt=""
-                width="42px"/>
-                <div class="weather-forecast-temperature">
-                  <span class="weather-forecast-temperature-max">
-                18°
-                </span>
-                 <span class="weather-forecast-temperature-min">
-                12°
-                 </span>
-              </div>
-            </div>
           </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-      </div>
         <small>
           <a
             href="https://github.com/mpmg-co/Vanilla-Weather-App-M"
